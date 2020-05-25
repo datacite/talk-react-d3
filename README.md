@@ -2,6 +2,10 @@
 
 > Line chart demos with different React D3 libraries: Victory.js, Recharts, Nivo, VX, Britecharts-react and react-vis.
 
+
+![Comparison](https://i.imgur.com/nsrmbfD.png)
+
+
 [Check the Demo][demoLink]
 
 ![Demo screenshot][demoSS]

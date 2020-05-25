@@ -2,10 +2,14 @@ import React, { Component } from 'react';
 
 import LineChartVictory from './victory/line.js';
 import LineChartRecharts from './recharts/line.js';
-import LineChartRVis from './react-vis/line.js';
+import BarChartRecharts from './recharts/bar.js';
+// import LineChartRVis from './react-vis/line.js';
+import VegaBarChart from './vega/line.js';
 import LineChartVX from './vx/line.js';
 import LineChartBritechartsReact from './britecharts-react/line.js';
+import BarChartBritechartsReact from './britecharts-react/bar.js';
 import LineChartNivo from './nivo/line.js';
+import SemioticBarChart from './semiotic/bar.js';
 
 import D3Logo from './extra/d3Logo.js';
 import Grid from 'react-uikit-grid';
@@ -29,13 +33,23 @@ class App extends Component {
           <small>Check the code in <a href="https://github.com/Golodhros/talk-react-d3">https://github.com/Golodhros/talk-react-d3</a></small>
         </div>
         <Grid>
-          <Article col='1-1'
+          {/* <Article col='1-1'
             className="uk-margin-bottom"
             title="Victory.js"
             lead="Low level charting library by Formidable Labs"
           >
             <section className="demo demo-victory uk-margin-bottom">
               <LineChartVictory />
+            </section>
+          </Article> */}
+
+        <Article col='1-1'
+            className="uk-margin-bottom"
+            title="Comparison"
+            lead="A composable charting library built on React components"
+          >
+            <section className="demo demo-recharts uk-margin-bottom">
+            <img src="https://i.imgur.com/nsrmbfD.png" />
             </section>
           </Article>
 
@@ -45,7 +59,7 @@ class App extends Component {
             lead="A composable charting library built on React components"
           >
             <section className="demo demo-recharts uk-margin-bottom">
-              <LineChartRecharts />
+              <BarChartRecharts />
             </section>
           </Article>
 
@@ -60,6 +74,27 @@ class App extends Component {
           </Article>
 
           <Article col='1-1'
+            className="uk-margin-bottom"
+            title="Vega"
+            lead="Vega provides a rich set of dataviz components, built on top of the awesome d3 and Reactjs libraries."
+          >
+            <section className="demo demo-nivo uk-margin-bottom">
+              <VegaBarChart />
+            </section>
+          </Article>
+
+          <Article col='1-1'
+            className="uk-margin-bottom"
+            title="Semiotic"
+            lead="Semiotic provides a rich set of dataviz components, built on top of the awesome d3 and Reactjs libraries."
+          >
+            <section className="demo uk-margin-bottom">
+              <SemioticBarChart />
+            </section>
+          </Article>
+
+
+          {/* <Article col='1-1'
             className="uk-margin-bottom"
             title="VX"
             lead="Low-level visualization components for creating visualizations"
@@ -76,7 +111,7 @@ class App extends Component {
                 }}
               />
             </section>
-          </Article>
+          </Article> */}
 
           <Article col='1-1'
             className="uk-margin-bottom"
@@ -84,7 +119,7 @@ class App extends Component {
             lead="React wrapper for Britecharts"
           >
             <section className="demo demo-bcr uk-margin-bottom">
-              <LineChartBritechartsReact
+              <BarChartBritechartsReact
                 width={400}
                 height={200}
               />
@@ -97,7 +132,7 @@ class App extends Component {
             lead="Uber's visualization library"
           >
             <section className="demo demo-react-vis uk-margin-bottom">
-              <LineChartRVis />
+              {/* <LineChartRVis /> */}
             </section>
           </Article>
         </Grid>
