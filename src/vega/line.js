@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
 import { VegaLite } from 'react-vega'
 
+
+const barData = {
+  table: [
+    { repository: 'A', count: 28 },
+    { repository: 'B', count: 55 },
+    { repository: 'C', count: 43 },
+    { repository: 'D', count: 91 },
+    { repository: 'E', count: 81 },
+    { repository: 'F', count: 53 },
+    { repository: 'G', count: 19 },
+    { repository: 'H', count: 87 },
+    { repository: 'I', count: 52 },
+  ],
+}
+
 const spec = {
   width: 500,
   height: 300,
@@ -23,19 +38,7 @@ const spec = {
   data: { name: 'table' }, // note: vega-lite data attribute is a plain object instead of an array
 }
 
-const barData = {
-  table: [
-    { repository: 'A', count: 28 },
-    { repository: 'B', count: 55 },
-    { repository: 'C', count: 43 },
-    { repository: 'D', count: 91 },
-    { repository: 'E', count: 81 },
-    { repository: 'F', count: 53 },
-    { repository: 'G', count: 19 },
-    { repository: 'H', count: 87 },
-    { repository: 'I', count: 52 },
-  ],
-}
+
 
 class VegaBarChart extends Component {
   render() {
