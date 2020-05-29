@@ -1,10 +1,9 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 
 import OrdinalFrame from "semiotic/lib/OrdinalFrame"
 
 
-const barData = {
-  table: [
+const barData =  [
     { repository: 'A', count: 28 },
     { repository: 'B', count: 55 },
     { repository: 'C', count: 43 },
@@ -14,11 +13,12 @@ const barData = {
     { repository: 'G', count: 19 },
     { repository: 'H', count: 87 },
     { repository: 'I', count: 52 },
-  ],
-}
+  ];
 
 
-const frameProps = {   data: barData.table,
+
+const frameProps = {   
+  data: barData,
   size: [500,300],
   type: "bar",
   oAccessor: "repository",
@@ -29,15 +29,7 @@ const frameProps = {   data: barData.table,
 }
 
 
-
-
-// export default () => {
-//   return <OrdinalFrame {...frameProps} />
-// }
-
-
-
-class BarChart extends PureComponent {
+class BarChart extends Component {
   render() {
       return (
         <OrdinalFrame {...frameProps} />

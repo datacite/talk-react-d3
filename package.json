@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://golodhros.github.io/talk-react-d3",
   "dependencies": {
+    "@nivo/bar": "^0.61.1",
     "@vx/axis": "^0.0.147",
     "@vx/curve": "^0.0.143",
     "@vx/group": "^0.0.143",
