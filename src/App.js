@@ -28,9 +28,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <D3Logo />
         </div>
-        <h1>React-D3 Libraries Comparison</h1>
+        <h1>React-D3 Libraries  Comparison</h1>
         <div className="App-intro">
-          <p>Bar chart demos with different React D3 libraries: Vega, Recharts, Nivo, VX, Britecharts-react and Semiotic.</p>
+          <p>Bar chart demos with different React D3 libraries: Semiotic, Vega, Recharts, Nivo, and Britecharts-react.</p>
           <small>Check the code in <a href="https://github.com/kjgarza/talk-react-d3">https://github.com/kjgarza/talk-react-d3</a></small>
         </div>
         <Grid>
@@ -70,8 +70,9 @@ class App extends Component {
             </section>
           </Article>
 
+          <Article col='1-3'></Article>
 
-          <Article col='1-1'
+          <Article col='1-3'
             className="uk-margin-bottom"
             title="Similarities"
             lead=""
@@ -80,7 +81,10 @@ class App extends Component {
             <p  align="left">
             All the libraries are very similar in certain aspects. They all have react wrapper and the all offer DOM interaction for the visulisation.
             In terms of development aid they all are writing in Typescript (with exception of Nivo) which is useful for the development as sone of them do have a complex API.
-            All the libraries also use a declarative approach in 
+            All the libraries also use a declarative approach.    
+            In declarative visualization, you provide a description of the graphic that you want. This description does not correspond with a chart type; rather, you describe the various entities that should make up the chart and the relationships between those entities. These entities might include:
+            This is ultimately what it means to be declarative: describing what your chart should show, not how it should be created.
+
 
             </p>
             </section>
@@ -98,11 +102,12 @@ class App extends Component {
 
           <Article col='1-2'
             className="uk-margin-bottom"
-            title="Comparison"
-            lead="A composable charting library built on React components"
+            title= "Recharts"
           >
             <section className="demo demo-recharts uk-margin-bottom">
-            <p>Line chart demos with different React D3 libraries: Victory.js, Recharts, Nivo, VX, Britecharts-react and react-vis.</p>
+            <p>All the components of Recharts are clearly separated. The lineChart is composed of x axis, tooltip, grid, and line items, and each of them is an independent React Component. The clear separation and composition of components is one of the principle Recharts follows.
+
+</p>
 
             <p  align="left">
             Differences:
@@ -110,6 +115,7 @@ class App extends Component {
             <br/>
             <ul align="left">
             <li> Declarative components approach</li>
+            <li> Medium size API</li>
             </ul>  
             </section>
           </Article>
@@ -126,8 +132,7 @@ class App extends Component {
 
           <Article col='1-2'
             className="uk-margin-bottom"
-            title="Comparison"
-            lead="A composable charting library built on React components"
+            title= "Nivo"
           >
             <section className="demo demo-recharts uk-margin-bottom">
             <p>Line chart demos with different React D3 libraries: Victory.js, Recharts, Nivo, VX, Britecharts-react and react-vis.</p>
@@ -151,18 +156,16 @@ class App extends Component {
 
           <Article col='1-2'
             className="uk-margin-bottom"
-            title="Comparison"
+            title= "Vega"
             lead=""
           >
             <section className="demo demo-recharts uk-margin-bottom">
             <p  align="left">
-              In declarative visualization, you provide a description of the graphic that you want. This description does not correspond with a chart type; rather, you describe the various entities that should make up the chart and the relationships between those entities. These entities might include:
 
-            What data does your chart have?
-            Does it have axes and legends? Where should they be placed?
-            What kind of shapes are shown in your graph? How do they link to the data?
+              A Vega specification defines an interactive visualization in a JSON format. Specifications are parsed by Vega’s JavaScript runtime to generate both static images or interactive web-based views. Vega provides a convenient representation for computational generation of visualizations, and can serve as a foundation for new APIs and visual analysis tools.
 
-            This is ultimately what it means to be declarative: describing what your chart should show, not how it should be created.
+
+
             </p>
             <br/>
             <p  align="left">
@@ -180,7 +183,7 @@ class App extends Component {
           <Article col='1-2'
             className="uk-margin-bottom"
             title="Semiotic"
-            lead="Semiotic provides a rich set of dataviz components, built on top of the awesome d3 and Reactjs libraries."
+            lead="Semiotic  is a data visualization framework for React."
           >
             <section className="demo uk-margin-bottom">
               <SemioticBarChart />
@@ -189,12 +192,13 @@ class App extends Component {
 
           <Article col='1-2'
             className="uk-margin-bottom"
-            title="Comparison"
-            lead="A composable charting library built on React components"
+            title= "Semiotic"
+            lead=""
           >
             <section className="demo demo-recharts uk-margin-bottom">
             <p>
-              Line chart demos with different React D3 libraries: Victory.js, Recharts, Nivo, VX, Britecharts-react and react-vis.
+            It provides three types of frames XYFrame, OrdinalFrame, NetworkFrame, to deploy a wide variety of charts.
+
 
             </p>
 
@@ -230,8 +234,7 @@ class App extends Component {
 
           <Article col='1-2'
             className="uk-margin-bottom"
-            title="Comparison"
-            lead="A composable charting library built on React components"
+            title= "Britecharts-React"
           >
             <section className="demo demo-recharts uk-margin-bottom">
             <p  align="left">
@@ -250,8 +253,8 @@ class App extends Component {
             </section>
           </Article>
 
-
-          <Article col='1-1'
+          <Article col='1-3'></Article>
+          <Article col='1-3'
             className="uk-margin-bottom"
             title="Summary and suggestion"
             lead=""
