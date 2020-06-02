@@ -23,8 +23,8 @@ const frameProps = {
   type: "bar",
   oAccessor: "repository",
   rAccessor: "count",
-  style: { fill: "#ac58e5", stroke: "black" },
-  title: "Tweets",
+  style: { fill: "#ac58e5", stroke: "white" },
+  title: "repos",
   oLabel: true
 }
 
