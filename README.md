@@ -57,6 +57,13 @@ All the libraries have a fair amount of documentation. In terms of examples that
 
 Only Vega provides a [online playground](https://vega.github.io/editor/#/examples/vega/bar-chart), where the charts can be edited in isolation, this is actually very useful to isolate the visualization from React or your application during development.
 
+|              | Maintainer                                   |   |
+|--------------|----------------------------------------------|---|
+| Rechart      | Rechart                                      |   |
+| Nivo         | community                                    |   |
+| Vega         | Univeristy of Washigton Interactive Data Lab |   |
+| Semiotic     | nteract                                      |   |
+| Brightcharts | Eventbrite                                   |   |
 
 
 > Winner: Vega  
